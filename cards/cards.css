@@ -1,0 +1,43 @@
+/* General container styling for cards */
+.card-container, .cards-container, #card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space below each section */
+}
+
+/* Individual card container styling */
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Space around each card */
+}
+
+/* Container for the card image */
+.card-item img {
+    width: 100px; /* Fixed width for each card */
+    height: 140px; /* Fixed height for each card */
+}
+
+/* Container for card details (value and suit) */
+.card-details {
+    text-align: center; /* Center align the text */
+}
+
+/* Card value and suit styling */
+.card-details p {
+    margin: 5px 0; /* Space between value and suit */
+}
+
+/* Styling for stacking cards */
+#card-list {
+    position: relative; /* Ensure stacking effect works */
+    list-style: none; /* Remove list bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#card-list img {
+    position: absolute; /* Ensure cards stack on top of each other */
+    transition: transform 0.3s ease-in-out; /* Smooth stacking */
+}
